@@ -13,9 +13,32 @@
 <main class="container">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, fuga odio ex libero velit debitis molestias at? Asperiores sapiente facilis mollitia, tempora architecto, neque praesentium expedita autem qui totam nobis!</p>
     
-    <form>
-     <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your Name"/>
+    <form action="/submit_form" method="POST">
+     <label for="name"> Full Name</label>
+        <input type="text" id="name" placeholder="Your Name" required/>
+        
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="blessedbc1@gmail.com" required/>
+        
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <label for="newsletter">Subscribe to newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, expedita voluptatibus.
+        </textarea>
         <button>Submit</button>
      </form>
 </main>
