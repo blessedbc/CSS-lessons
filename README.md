@@ -1,1 +1,1 @@
-# CSS-lessons
+# CSS-lessons is good and awesome
